@@ -69,6 +69,7 @@ void egtErrorPulse(double degreesC) {
     setEgtOutput(degreesC);
     delay(2000);
   }
+  setEgtOutput(0);
 }
 
 void setupPWM16() {
