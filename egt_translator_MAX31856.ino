@@ -61,9 +61,9 @@ void setEgtOutput(double degreesC) {
 
 // pulsing routine used for fault diagnosis
 // half-second at 0 degrees, then 2 seconds of fault code
-// repeated 50 times
+// repeated 3 times
 void egtErrorPulse(double degreesC) {
-  for (int i; i < 50; i++) {
+  for (int i = 0; i < 3; i++) {
     setEgtOutput(0);
     delay(500);
     setEgtOutput(degreesC);
